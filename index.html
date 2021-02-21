@@ -4,9 +4,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link rel="stylesheet" type="text/css" href="site.css">
-    <script src="https://kit.fontawesome.com/cb10d2b8a8.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
 
 
     <title>Sai Prasad Mora</title>
@@ -14,109 +16,122 @@
 
   <body>
     <div class="header">
-      <div class="navbar">
-        <div class="logo">Sai Prasad</div>
-        <div class="nav-links">
-          <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand">Sai Prasad</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link " href="#about-section" data-aos="fade-down" data-aos-delay="100">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills-section" data-aos="fade-down" data-aos-delay="250">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects-section" data-aos="fade-down" data-aos-delay="450">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#contact-section" data-aos="fade-down" data-aos-delay="600">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="header-container">
+        <div class="content">
+          <h1>Hi, my name is</h1>
+          <h2>Sai Prasad.</h2>
+          <h2>I build things for the web.</h2>
+          <p>Hi, i am saiprasad a fresher who is into web development.<br>
+            i have an experience of 6 months were i learnt and improved my skills<br>
+            and i am looking for the oppurtunity of front end development</p>
+          <a href="#" class="button">Get In Touch</a>
+
         </div>
       </div>
-      <div class="container"></div>
-      <div class="content">
-        <h1>Hi, my name is</h1>
-        <h2>Sai Prasad.</h2>
-        <h2>I build things for the web.</h2>
-        <p>Hi, i am Sai Prasad a fresher who is into web development.<br>
-          i have an experience of 6 months were i learnt and improved my skills<br>
-          and i am looking for the oppurtunity of front end development</p>
-        <a href="#" class="button">Get In Touch</a>
-
-      </div>
     </div>
 
-    </div>
 
-    <!-- about section ---->
+    <!---- about section ---->
+
     <div class="about-section">
-      <h1>About me</h1>
+      <a name="about-section"></a>
+      <h1> About me</h1>
       <div class="about">
         <div class="content">
-          <p>Hello,I'm Sai Prasad, a graduate fresher based in hyderabad,Btech</p>
-          <p>I enjoy creating things that live on the internet, whether that be<br>
-            websites,applications,or anything in between. My goal is to<br>
-            always build products that provide pixel-perfect, performant<br>
+          <p>Hello,I'm Saiprasad, a graduate fresher based in hyderabad,Btech</p>
+          <p>I enjoy creating things that live on the internet, whether that be
+            websites,applications,or anything in between. My goal is to
+            always build products that provide pixel-perfect, performant
             experiencs.</p>
-          <p>Shortly after graduating from Sreenidhi, I joined course<br>
-            the codecademy where i learnt different technologies and<br>
+          <p>Shortly after graduating from Sreenidhi, I joined course
+            the codecademy where i learnt different technologies and
             different experience of projects.</p>
           <p>
             Here are a few technologies i've been working on recently:
           </p>
         </div>
         <div class="picture">
-          <img src="learn_sp.png">
+          <img src="profile.png">
         </div>
 
       </div>
     </div>
 
 
-    <!--- skills---->
+
+    <!----- skills---->
     <div class="skills-section">
+      <a name="skills-section"></a>
       <h1>Skills</h1>
       <div class="skills-container">
-        <div class="skills">
-          <div class="skill">
-            <i class="fab fa-html5 fa-4x"></i>
-            <h5>HTML5</h5>
-          </div>
-          <div class="skill">
-            <i class="fab fa-html5 fa-4x"></i>
-            <h5>HTML5</h5>
-          </div>
-          <div class="skill">
-            <i class="fab fa-html5 fa-4x"></i>
-            <h5>HTML5</h5>
-          </div>
+        <div class="skill">
+          <i class="fab fa-html5 fa-4x"></i>
+          <h6>HTML5</h6>
         </div>
-        <div class="skills">
-          <div class="skill">
-            <i class="fab fa-html5 fa-4x"></i>
-            <h5>HTML5</h5>
-          </div>
-          <div class="skill">
-            <i class="fab fa-html5 fa-4x"></i>
-            <h5>HTML5</h5>
-          </div>
-          <div class="skill">
-            <i class="fab fa-html5 fa-4x"></i>
-            <h5>HTML5</h5>
-          </div>
+        <div class="skill">
+          <i class="fab fa-css3-alt fa-4x"></i>
+          <h6>CSS3</h6>
         </div>
-        <div class="skills">
-          <div class="skill">
-            <i class="fab fa-html5 fa-4x"></i>
-            <h5>HTML5</h5>
-          </div>
-          <div class="skill">
-            <i class="fab fa-html5 fa-4x"></i>
-            <h5>HTML5</h5>
-          </div>
-          <div class="skill">
-            <i class="fab fa-html5 fa-4x"></i>
-            <h5>HTML5</h5>
-          </div>
-
+        <div class="skill">
+          <i class="fab fa-bootstrap fa-4x"></i>
+          <h6>BOOTSTRAP4</h6>
+        </div>
+        <div class="skill">
+          <i class="fab fa-js-square fa-4x"></i>
+          <h6>JAVASCRIPT</h6>
+        </div>
+        <div class="skill">
+          <i class="fab fa-python fa-4x"></i>
+          <h6>PYTHON</h6>
+        </div>
+        <div class="skill">
+          <i class="fas fa-database fa-4x"></i>
+          <h6>DATABASE</h6>
+        </div>
+        <div class="skill">
+          <i class="fab fa-github fa-4x"></i>
+          <h6>GITHUB</h6>
+        </div>
+        <div class="skill">
+          <i class="fas fa-terminal fa-4x"></i>
+          <h6>COMMAND LINE</h6>
+        </div>
+        <div class="skill">
+          <i class="fas fa-gamepad fa-4x"></i>
+          <h6>PHASER.JS</h6>
         </div>
       </div>
-    </div>
 
-    <!--- projects----->
+    </div>
+    </div>
+    </div>
+    <!----- projects----->
     <div class="projects-section">
+      <a name="projects-section"></a>
       <h1>Projects</h1>
       <div class="projects">
         <div class="project">
@@ -127,8 +142,18 @@
               <a href="#" class="project-button"><i class="fas fa-external-link-alt fa-2x"></i></a>
             </div>
           </div>
-          <h3>Sai Prasad</h3>
-          <p>This is an dummy one where the actual users will share their experience they had with this website and products.</p>
+          <div class="project-details">
+            <h3>Vanilla.js-tilt Animation</h3>
+            <p>A smooth 3D tilt library forked from Tilt.js (vanilla js).
+              and about its different properties and implemented it by doing a project.</p>
+          </div>
+          <div class="tools-used">
+            <ul>
+              <li>html5</li>
+              <li>css3</li>
+              <li>vanilla.js</li>
+            </ul>
+          </div>
 
         </div>
         <div class="project">
@@ -139,8 +164,18 @@
               <a href="#" class="project-button"><i class="fas fa-external-link-alt fa-2x"></i></a>
             </div>
           </div>
-          <h3>Sai Prasad</h3>
-          <p>This is an dummy one where the actual users will share their experience they had with this website and products.</p>
+          <div class="project-details">
+            <h3>S&P Online Store</h3>
+            <p>A smooth 3D tilt library forked from Tilt.js (vanilla js).
+              and about its different properties and implemented it by doing a project.</p>
+          </div>
+          <div class="tools-used">
+            <ul>
+              <li>html5</li>
+              <li>css3</li>
+              <li>bootstrap</li>
+            </ul>
+          </div>
 
         </div>
         <div class="project">
@@ -151,8 +186,19 @@
               <a href="#" class="project-button"><i class="fas fa-external-link-alt fa-2x"></i></a>
             </div>
           </div>
-          <h3>Sai Prasad</h3>
-          <p>This is an dummy one where the actual users will share their experience they had with this website and products.</p>
+          <div class="project-details">
+            <h3>A Portfolio Website</h3>
+            <p>A smooth 3D tilt library forked from Tilt.js (vanilla js).
+              and about its different properties and implemented it by doing a project.</p>
+          </div>
+          <div class="tools-used">
+            <ul>
+              <li>html5</li>
+              <li>css3</li>
+              <li>javascript</li>
+              <li>jquery</li>
+            </ul>
+          </div>
 
         </div>
         <div class="project">
@@ -163,8 +209,19 @@
               <a href="#" class="project-button"><i class="fas fa-external-link-alt fa-2x"></i></a>
             </div>
           </div>
-          <h3>Sai Prasad</h3>
-          <p>This is an dummy one where the actual users will share their experience they had with this website and products.</p>
+          <div class="project-details">
+            <h3>Present Portfolio Website</h3>
+            <p>A smooth 3D tilt library forked from Tilt.js (vanilla js).
+              and about its different properties and implemented it by doing a project.</p>
+          </div>
+          <div class="tools-used">
+            <ul>
+              <li>html5</li>
+              <li>css3</li>
+              <li>bootstrap</li>
+              <li>AOS</li>
+            </ul>
+          </div>
 
         </div>
         <div class="project">
@@ -175,26 +232,49 @@
               <a href="#" class="project-button"><i class="fas fa-external-link-alt fa-2x"></i></a>
             </div>
           </div>
-          <h3>Sai Prasad</h3>
-          <p>This is an dummy one where the actual users will share their experience they had with this website and products.</p>
+          <div class="project-details">
+            <h3>NETFLIX Clone-Page</h3>
+            <p>A smooth 3D tilt library forked from Tilt.js (vanilla js).
+              and about its different properties and implemented it by doing a project.</p>
+          </div>
+          <div class="tools-used">
+            <ul>
+              <li>html5</li>
+              <li>css3</li>
+              <li>bootstrap</li>
+            </ul>
+          </div>
 
         </div>
         <div class="project">
           <div class="button-row">
             <a href="#" class="project-button"><i class="far fa-folder fa-2x"></i></a>
             <div>
-              <a href="#" class="project-button"><i class="fab fa-github fa-2x"></i></a>
+              <a href="#" class="project-button"><i class="fab fa-github fa fa-2x"></i></a>
               <a href="#" class="project-button"><i class="fas fa-external-link-alt fa-2x"></i></a>
             </div>
           </div>
-          <h3>Sai Prasad</h3>
-          <p>This is an dummy one where the actual users will share their experience they had with this website and products.</p>
+          <div class="project-details">
+            <h3>Video Player</h3>
+            <p>A smooth 3D tilt library forked from Tilt.js (vanilla js).
+              and about its different properties and implemented it by doing a project.</p>
+          </div>
+          <div class="tools-used">
+            <ul>
+              <li>html5</li>
+              <li>css3</li>
+              <li>django</li>
+              <li>python</li>
+            </ul>
+          </div>
+
         </div>
       </div>
     </div>
 
-    <!-- contact---->
+    <!------ contact---->
     <div class="contact-section">
+      <a name="contact-section"></a>
       <h1>Contact</h1>
       <div class="contact">
         <div class="contact-icon">
@@ -218,11 +298,18 @@
 
     <footer>
       <hr>
-      <p class="copyright"> &copy;2021 built by Sai prasad.</p>
+      <p class="copyright"> &copy;2021 built by Sai Prasad.</p>
     </footer>
 
 
 
+
+    <script src="https://kit.fontawesome.com/cb10d2b8a8.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
   </body>
 
