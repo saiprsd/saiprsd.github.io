@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Poppins:wght@200&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -13,8 +15,27 @@
   padding: 0 40px;
 }
 
+.nav-link::after {
+  content: " ";
+  display: block;
+  width: 0px;
+  height: 2px;
+  background: #fff;
+  transition: width .3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  transition: width .3s;
+}
+
 .navbar-nav li {
-  margin-left: 10px;
+  margin-left: 25px;
+  display: inline-block;
+}
+
+.navbar-nav li a {
+  text-decoration: none;
 }
 
 .navbar-nav .nav-item .nav-link {
@@ -22,6 +43,7 @@
   font-size: 14px;
   color: #fff;
   font-family: 'Fira Code', monospace;
+  text-decoration: none;
 }
 
 .header {
@@ -59,11 +81,24 @@
 }
 
 .header-container .inner-section .content h5 {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: normal;
   margin: 0;
   margin-bottom: 20px;
   letter-spacing: 0.1rem;
+}
+
+.header-container .inner-section .content span {
+  font-weight: bold;
+}
+
+.header-container .inner-section .content h1 {
+  font-size: 62px;
+  font-weight: bold;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  opacity: 0.7;
 }
 
 .header-container .inner-section .content h2 {
@@ -72,10 +107,11 @@
   margin: 0;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
+  opacity: 0.5;
 }
 
 .header-container .inner-section .content p {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: normal;
   margin-top: 20px;
 }
@@ -150,6 +186,9 @@
 .inner-section .picture img {
   width: 250px;
   height: auto;
+  box-shadow: 22px -19px 0px 2px rgba(1, 42, 74, 1);
+  -webkit-box-shadow: 22px -19px 0px 2px rgba(1, 42, 74, 1);
+  -moz-box-shadow: 22px -19px 0px 2px rgba(1, 42, 74, 1);
 }
 
 .skills-section {
@@ -163,6 +202,10 @@
   justify-content: space-between;
   align-items: center;
   padding: 80px 0;
+}
+
+.skills-section .inner-section .content {
+  width: 40%;
 }
 
 .outer-circle {
@@ -205,10 +248,11 @@
 
 .inner-circle:hover .tooltiptext {
   visibility: visible;
-  background-color: black;
+  background-color: #012a4a;
   color: #fff;
   padding: 5px 20px;
   border-radius: 50px;
+  font-size: 13px;
 }
 
 .inner-circle i {
@@ -291,6 +335,15 @@
   text-align: left;
 }
 
+.view a {
+  font-size: 14px;
+}
+
+.projects-section .inner-section .project .const {
+  width: 250px;
+  height: 225px;
+}
+
 .projects-section .inner-section .project:hover {
   transform: translateY(-10px);
   cursor: pointer;
@@ -310,11 +363,13 @@
 .projects-section .inner-section .project .button-row h4 {
   font-size: 20px;
   padding: 10px 0;
+  font-weight: bold;
 }
 
 .projects-section .inner-section .project .project-details p {
   font-size: 15px;
   padding: 10px 0;
+  font-weight: 500;
 }
 
 .projects-section .inner-section .project .tools-used ul {
@@ -326,8 +381,10 @@
 }
 
 .projects-section .inner-section .project .tools-used ul li {
-  font-size: 14.5px;
+  font-size: 13px;
   margin-right: 20px;
+  font-weight: 500;
+  font-family: 'Fira Code', monospace;
 }
 
 .contact-section h1 {
@@ -421,6 +478,13 @@ footer hr {
     margin-bottom: 20px;
   }
 
+  .header-container .inner-section .content h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
   .header-container .inner-section .content h2 {
     font-size: 30px;
     font-weight: bold;
@@ -429,7 +493,7 @@ footer hr {
   }
 
   .header-container .inner-section .content p {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: normal;
     margin-top: 20px;
   }
@@ -468,7 +532,7 @@ footer hr {
   }
 
   .about-section .inner-section .content p {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .inner-section .picture {
@@ -481,6 +545,7 @@ footer hr {
   .inner-section .picture img {
     width: 70%;
     height: auto;
+    margin-top: 20px;
   }
 
   /*****skills*****/
@@ -501,6 +566,14 @@ footer hr {
     padding: 10px 0;
     margin: 0;
     text-align: center;
+  }
+
+  .skills-section .inner-section .content {
+    width: 100%;
+  }
+
+  .skills-section .inner-section .content p {
+    font-size: 13px
   }
 
   .skills-container {
@@ -531,6 +604,28 @@ footer hr {
     align-items: center;
     background-color: #1e3d59;
     color: #f5f5f5;
+  }
+
+  .exp {
+    visibility: hidden;
+    width: 120px;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 40px;
+  }
+
+  .inner-circle:hover .tooltiptext {
+    visibility: visible;
+    background-color: #012a4a;
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 10px;
+    font-size: 10px;
   }
 
   .inner-circle i {
@@ -578,7 +673,6 @@ footer hr {
   .projects-section .inner-section .project {
     border: 1px solid white;
     padding: 20px;
-    color: orange;
     width: 100%;
     position: relative;
     margin-bottom: 10px;
@@ -602,13 +696,13 @@ footer hr {
   .projects-section .inner-section .project {
     border: 1px solid white;
     padding: 20px;
-    background-color: #;
     color: #fff;
   }
 
   .projects-section .inner-section .project .button-row h4 {
     font-size: 16px;
     padding: 10px 0;
+    font-weight: bold;
   }
 
   .projects-section .inner-section .project .project-details p {
